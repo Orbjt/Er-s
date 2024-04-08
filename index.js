@@ -73,7 +73,9 @@ function updateStatusAndSendMessages() {
   const nextStatus = statusMessages[(currentIndex + 1) % statusMessages.length];
 
   client.user.setPresence({
-    activities: [{ name: currentStatus, type: ActivityType.Custom}],
+    activities: [{ name: "Dev ☍ Aylín 🥠",
+            type: 1,
+            url: "https://www.twitch.tv/discord"}],
     status: 'dnd',
   });
 
